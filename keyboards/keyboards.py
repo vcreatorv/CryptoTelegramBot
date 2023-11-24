@@ -6,7 +6,6 @@ from aiogram.types import (
 )
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-
 main_keyboard = ReplyKeyboardMarkup(
     keyboard=[
         [
@@ -31,4 +30,16 @@ def currency_exchange_keyboard():
     keyboard = ReplyKeyboardBuilder()
     [keyboard.button(text=fiat) for fiat in currencies]
     keyboard.adjust(*[3] * 3)
+    keyboard.button(text='Back')
+    return keyboard.as_markup(resize_keyboard=True)
+
+
+def currency_exchange_keyboard_expanded():
+    keyboard = ReplyKeyboardBuilder()
+
+    [keyboard.button(text=fiat) for fiat in currencies]
+    keyboard.adjust(*[3] * 3)
+    keyboard.button(text='Change base currency')
+    keyboard.button(text='Change target currency')
+    keyboard.button(text='Back')
     return keyboard.as_markup(resize_keyboard=True)
