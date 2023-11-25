@@ -1617,3 +1617,1357 @@ INFO:aiogram.event:Update id=707434837 is handled. Duration 203 ms by bot id=647
 INFO:aiogram.event:Update id=707434838 is handled. Duration 1563 ms by bot id=6479143199
 INFO:aiogram.dispatcher:Polling stopped
 INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434839 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434840 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434841 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434842 is handled. Duration 625 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434843 is handled. Duration 1561 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434844 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434845 is handled. Duration 485 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434846 is handled. Duration 639 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434847 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434848 is handled. Duration 360 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434849 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434850 is handled. Duration 264 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434851 is handled. Duration 1734 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434852 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434853 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434854 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434855 is handled. Duration 735 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434856 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434857 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434858 is handled. Duration 297 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434859 is handled. Duration 1593 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434860 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434861 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434862 is handled. Duration 484 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434863 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434864 is handled. Duration 155 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434865 is handled. Duration 172 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434866 is handled. Duration 375 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434867 is handled. Duration 655 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434868 is handled. Duration 186 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434869 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434870 is handled. Duration 328 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434871 is handled. Duration 2063 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434872 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434873 is handled. Duration 0 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434874 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434874 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 83, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434875 is handled. Duration 422 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434876 is handled. Duration 219 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434877 is handled. Duration 172 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434878 is handled. Duration 438 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434879 is handled. Duration 1750 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434880 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434881 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434882 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434882 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 84, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434883 is handled. Duration 421 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434884 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434885 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434886 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434887 is handled. Duration 1578 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434888 is handled. Duration 203 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434889 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434890 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434890 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 85, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434891 is handled. Duration 500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434892 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434893 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434894 is handled. Duration 233 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434895 is handled. Duration 1577 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434896 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434897 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434898 is not handled. Duration 15 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434898 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434899 is handled. Duration 311 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434900 is handled. Duration 233 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434901 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434902 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434903 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434904 is handled. Duration 2047 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434905 is handled. Duration 203 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434906 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434907 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434907 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707434908 is not handled. Duration 16 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434908 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707434909 is not handled. Duration 16 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434909 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707434910 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434910 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707434911 is not handled. Duration 16 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434911 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 87, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434914 is handled. Duration 828 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434915 is handled. Duration 266 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434916 is handled. Duration 203 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434917 is handled. Duration 328 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434918 is handled. Duration 20578 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434919 is handled. Duration 281 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434920 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434922 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434923 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434924 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434925 is handled. Duration 359 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434926 is handled. Duration 1125 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434928 is handled. Duration 593 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434929 is handled. Duration 140 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434930 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434931 is handled. Duration 344 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434932 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434933 is handled. Duration 281 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434934 is handled. Duration 235 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434935 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434936 is handled. Duration 281 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434937 is handled. Duration 1343 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434938 is handled. Duration 264 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434939 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434940 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434940 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 90, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434941 is handled. Duration 453 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434942 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434943 is handled. Duration 203 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434944 is handled. Duration 375 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434945 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434946 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434947 is handled. Duration 265 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434948 is handled. Duration 1360 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434949 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434950 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434951 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434952 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434952 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 90, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434953 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434954 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434955 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434956 is handled. Duration 235 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434957 is handled. Duration 1109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434958 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434958 by bot id=6479143199
+KeyError: 'chosen_base_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 117, in back
+    change_flag[1] = exchange['chosen_base_currency']
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_base_currency'
+INFO:aiogram.event:Update id=707434959 is handled. Duration 1453 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434960 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434961 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434962 is handled. Duration 359 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434963 is handled. Duration 1139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434964 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434965 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434966 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434966 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 91, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434967 is handled. Duration 594 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434968 is handled. Duration 219 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434973 is handled. Duration 500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434974 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434975 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434976 is handled. Duration 468 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434977 is handled. Duration 1203 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434979 is handled. Duration 563 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434980 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434981 is handled. Duration 51500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434982 is handled. Duration 313 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434983 is handled. Duration 1250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434984 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434986 is handled. Duration 468 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434987 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434988 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434989 is handled. Duration 686 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434990 is handled. Duration 1093 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434991 is handled. Duration 640 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434992 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434993 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434994 is handled. Duration 328 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434995 is handled. Duration 968 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434996 is not handled. Duration 14 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707434996 by bot id=6479143199
+KeyError: 'chosen_base_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 115, in back
+    change_flag[1] = exchange['chosen_base_currency']
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_base_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707434997 is handled. Duration 468 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434998 is handled. Duration 140 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707434999 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435000 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435001 is handled. Duration 1156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435002 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707435002 by bot id=6479143199
+KeyError: 'chosen_base_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 115, in change_base_curr
+    change_flag[1] = exchange['chosen_base_currency']
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_base_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435003 is handled. Duration 452 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435004 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435005 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435006 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435007 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435008 is handled. Duration 296 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435009 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435010 is handled. Duration 468 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435011 is handled. Duration 296 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435012 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435013 is handled. Duration 328 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435014 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435015 is handled. Duration 1093 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435016 is handled. Duration 203 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435017 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435018 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435019 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435020 is handled. Duration 280 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435021 is handled. Duration 1046 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435022 is handled. Duration 656 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435023 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435024 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435025 is handled. Duration 264 ms by bot id=6479143199
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6479143199)
+INFO:aiogram.event:Update id=707435026 is handled. Duration 26593 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 6479143199)
+INFO:aiogram.event:Update id=707435027 is not handled. Duration 16 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707435027 by bot id=6479143199
+KeyError: 'chosen_base_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 117, in change_base_curr
+    change_flag[1] = exchange['chosen_base_currency']
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_base_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435028 is handled. Duration 453 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435029 is handled. Duration 110 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435030 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435031 is handled. Duration 344 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435032 is handled. Duration 1281 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435033 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707435033 by bot id=6479143199
+KeyError: 'chosen_base_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 117, in change_base_curr
+    change_flag[1] = exchange['chosen_base_currency']
+                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_base_currency'
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435035 is handled. Duration 531 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435036 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435037 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435038 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435040 is handled. Duration 515 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435041 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435042 is handled. Duration 235 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435043 is handled. Duration 390 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435044 is handled. Duration 1171 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435046 is handled. Duration 468 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435047 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435048 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435049 is handled. Duration 265 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435050 is handled. Duration 1500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435051 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435052 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435053 is handled. Duration 562 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435054 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435055 is handled. Duration 188 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435056 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435057 is handled. Duration 1093 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435058 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435059 is handled. Duration 188 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435060 is handled. Duration 125 ms by bot id=6479143199
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 1.349277 seconds and try again... (tryings = 1, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 1.688276 seconds and try again... (tryings = 2, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 2.165665 seconds and try again... (tryings = 3, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 2.893059 seconds and try again... (tryings = 4, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 3.725266 seconds and try again... (tryings = 5, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.835444 seconds and try again... (tryings = 6, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.097762 seconds and try again... (tryings = 7, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.871755 seconds and try again... (tryings = 8, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.770575 seconds and try again... (tryings = 9, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.129837 seconds and try again... (tryings = 10, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.916779 seconds and try again... (tryings = 11, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.165238 seconds and try again... (tryings = 12, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.993600 seconds and try again... (tryings = 13, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.921338 seconds and try again... (tryings = 14, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.071590 seconds and try again... (tryings = 15, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.998541 seconds and try again... (tryings = 16, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.942407 seconds and try again... (tryings = 17, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 5.052055 seconds and try again... (tryings = 18, bot id = 6479143199)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+WARNING:aiogram.dispatcher:Sleep for 4.953374 seconds and try again... (tryings = 19, bot id = 6479143199)
+INFO:aiogram.dispatcher:Connection established (tryings = 20, bot id = 6479143199)
+INFO:aiogram.event:Update id=707435062 is handled. Duration 343 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435063 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435064 is handled. Duration 140 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435065 is handled. Duration 266 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435061 is handled. Duration 21328 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435066 is handled. Duration 93 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435067 is handled. Duration 264 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435068 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435069 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435070 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435071 is handled. Duration 1188 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435072 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435073 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435074 is handled. Duration 936 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435075 is handled. Duration 453 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435076 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435077 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435078 is handled. Duration 280 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435079 is handled. Duration 1186 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435080 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435081 is handled. Duration 234 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435082 is handled. Duration 1156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435083 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435084 is handled. Duration 156 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435085 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435108 is handled. Duration 406 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435109 is handled. Duration 94 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435110 is handled. Duration 422 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435111 is handled. Duration 390 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435112 is handled. Duration 218 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435113 is handled. Duration 187 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435114 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435115 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435116 is handled. Duration 172 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435117 is handled. Duration 141 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435118 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435119 is handled. Duration 172 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435120 is handled. Duration 92 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435121 is handled. Duration 11547 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435122 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435123 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435124 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435125 is handled. Duration 140 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435126 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707435126 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 83, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707435127 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435128 is not handled. Duration 0 ms by bot id=6479143199
+ERROR:aiogram.event:Cause exception while process update id=707435128 by bot id=6479143199
+KeyError: 'chosen_target_currency'
+Traceback (most recent call last):
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 308, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 157, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Asus\Desktop\bot\CryptoTelegramBot\bot\bot.py", line 83, in currency_amount
+    target_currency = exchange['chosen_target_currency']
+                      ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'chosen_target_currency'
+INFO:aiogram.event:Update id=707435129 is handled. Duration 94 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435130 is handled. Duration 140 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435131 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435132 is handled. Duration 327 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435133 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435134 is handled. Duration 202 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435135 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435136 is handled. Duration 219 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435137 is handled. Duration 1436 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435138 is handled. Duration 77 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435139 is handled. Duration 780 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435140 is handled. Duration 234 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435141 is handled. Duration 327 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435142 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435143 is handled. Duration 625 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435144 is handled. Duration 280 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435145 is handled. Duration 1531 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435146 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435147 is handled. Duration 530 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435148 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435149 is handled. Duration 202 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435150 is handled. Duration 1390 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000022A2F706850>
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435154 is handled. Duration 452 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435153 is not handled. Duration 10530 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @HabrVaBot id=6479143199 - 'vaBot'
+INFO:aiogram.event:Update id=707435156 is handled. Duration 500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435157 is handled. Duration 109 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435158 is handled. Duration 188 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435155 is handled. Duration 21452 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435159 is handled. Duration 500 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435160 is handled. Duration 108 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435161 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435162 is handled. Duration 250 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435163 is handled. Duration 1592 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435164 is handled. Duration 155 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435165 is handled. Duration 188 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435166 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435167 is handled. Duration 171 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435168 is handled. Duration 155 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435169 is handled. Duration 422 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435170 is handled. Duration 1594 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435171 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435172 is handled. Duration 186 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435173 is handled. Duration 139 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435174 is handled. Duration 125 ms by bot id=6479143199
+INFO:aiogram.event:Update id=707435175 is handled. Duration 280 ms by bot id=6479143199
+INFO:aiogram.dispatcher:Polling stopped
+INFO:aiogram.dispatcher:Polling stopped for bot @HabrVaBot id=6479143199 - 'vaBot'
