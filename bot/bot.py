@@ -6,10 +6,9 @@ from aiogram.filters import Command, StateFilter
 from aiogram.fsm.context import FSMContext
 from configs.config import configuration
 from keyboards import keyboards
-from FSM.StateMachine import ExchangeCurrency, User
+from FSM.StateMachine import ExchangeCurrency, InfoCurrency
 from FSM.StateMachine import Menu
-from api.api import api_crypto
-users = {}
+from api.api import api_crypto_exchange
 
 logging.basicConfig(filename="../static/logger.txt", level=logging.INFO)
 dp = Dispatcher()
@@ -18,14 +17,9 @@ bot = Bot(token=configuration.BOT_TOKEN.get_secret_value(), parse_mode="html")
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message, state: FSMContext):
-    global users
-    users[message.from_user.id] = User(message.from_user.id)
-    id_ = message.from_user.id
-    await message.answer("Hello, Aiogram 3.x!", reply_markup=keyboards.main_keyboard)
-    await message.answer('Choose an option')
-    users[id_].state = Menu.option
-    await state.set_state(users[id_].state) # Menu.option
-    # await state.set_state(Menu.option)
+    await message.answer(f"Hello, {message.from_user.username}! Choose an option!",
+                         reply_markup=keyboards.main_keyboard)
+    await state.set_state(Menu.option)
 
 
 @dp.message(F.text.lower().in_(['back']))
@@ -39,19 +33,14 @@ async def back(message: types.Message, state: FSMContext, change_flag: list[bool
 
 @dp.message(Menu.option, F.text.in_(Menu.menu))
 async def menu_option(message: types.Message, state: FSMContext):
-    print(1)
-    global users
-    users[message.from_user.id].state = ExchangeCurrency.base_currency
     await state.update_data(option=message.text)
     await message.answer("Choose a <i>base currency</i> from the following list :)",
                          reply_markup=keyboards.currency_exchange_keyboard())
-    await state.set_state(users[message.from_user.id].state)
-    # await state.set_state(ExchangeCurrency.base_currency)
+    await state.set_state(ExchangeCurrency.base_currency)
 
 
 @dp.message(ExchangeCurrency.base_currency, F.text.in_(keyboards.currencies))
 async def exchange_target_currency(message: types.Message, state: FSMContext, change_flag: list[bool]):
-    print(2)
     await state.update_data(chosen_base_currency=message.text.upper())
     exchange = await state.get_data()
     if not change_flag[0]:
@@ -79,10 +68,6 @@ async def exchange_procedure(message: types.Message, state: FSMContext):
 
 @dp.message(ExchangeCurrency.amount)
 async def currency_amount(message: types.Message, state: FSMContext, change_flag: list[bool]):
-    # if message.text.lower() == 'back':
-    #     await message.answer(text='back')
-    #     await state.clear()
-    #     return await state.set_state(Menu.option)
     await state.update_data(amount=message.text)
     exchange = await state.get_data()
     amount_for_converse = exchange['amount']
@@ -96,7 +81,7 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
             "symbol": base_currency,
             "convert": target_currency
         }
-        response = api_crypto(parameters)
+        response = api_crypto_exchange(parameters)
         conversion = response["data"][0]["quote"][target_currency]["price"]
         await message.answer(
             f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
@@ -113,10 +98,6 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
 @dp.message(ExchangeCurrency.next_step)
 async def next_step(message: types.Message, state: FSMContext, change_flag: list[bool]):
     await state.update_data(step=message.text)
-    # if message.text.lower() == 'back':
-    #     await state.clear()
-    #     await state.set_state(Menu.option)
-    #     return await message.answer(text='back', reply_markup=keyboards.main_keyboard)
     if message.text.lower() == "change base currency":
         change_flag[0] = True
         await state.set_state(ExchangeCurrency.base_currency)

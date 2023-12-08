@@ -8,6 +8,11 @@ import pprint
 api_key_coin = configuration.API_KEY_COIN.get_secret_value()
 api_key_crypto = configuration.API_KEY_CRYPTO.get_secret_value()
 
+headers = {
+    'Accepts': 'application/json',
+    'X-CMC_PRO_API_KEY': api_key_crypto
+}
+
 
 def api_coin(api_key: str):
     base_currency, target_currency = map(
@@ -27,7 +32,7 @@ def api_coin(api_key: str):
         print("Указанная валюта не найдена")
 
 
-def api_crypto(parameters: Dict):
+def api_crypto_exchange(parameters: Dict):
     # url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
     # parameters = {
     #     "start": 1,
@@ -42,13 +47,45 @@ def api_crypto(parameters: Dict):
 
     url = "https://pro-api.coinmarketcap.com/v2/tools/price-conversion"
 
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': api_key_crypto
+    session = Session()
+    session.headers.update(headers)
+    response = session.get(url, params=parameters)
+
+    return json.loads(response.text)
+
+
+def api_crypto_info(crypto_symbol: str):
+    url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest"
+
+    parameters = {
+        "start": 1,
+        "limit": 5000,
+        "convert": "USD"
     }
 
     session = Session()
     session.headers.update(headers)
     response = session.get(url, params=parameters)
 
-    return json.loads(response.text)
+    data = json.loads(response.text)["data"]
+
+    target = dict()
+    for coin in data:
+        if coin["symbol"] == crypto_symbol:
+            target = coin
+            break
+
+    info = {
+        "Name": target["name"],
+        "Price": target["quote"]["USD"]["price"],
+        "1hr Change": f'{target["quote"]["USD"]["percent_change_1h"]}%',
+        "24hr Change": f'{target["quote"]["USD"]["percent_change_24h"]}%',
+        "7d Change": f'{target["quote"]["USD"]["percent_change_7d"]}%',
+        "Volume": f'${round(target["quote"]["USD"]["price"] * target["total_supply"], 2)}',
+        "Market Cap": f'${target["quote"]["USD"]["market_cap"]}',
+        "Circulating Supply": target["circulating_supply"],
+        "Total Supply": target["total_supply"],
+    }
+
+    return info
+

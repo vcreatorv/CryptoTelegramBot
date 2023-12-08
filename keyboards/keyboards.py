@@ -26,6 +26,37 @@ currencies = [
 ]
 
 
+
+
+currency_info_array = [
+    [
+        InlineKeyboardButton(text="Chart"),
+        InlineKeyboardButton(text="News"),
+    ],
+    [
+        InlineKeyboardButton(text="Markets"),
+        InlineKeyboardButton(text="Analytics"),
+    ]
+]
+
+currency_info_keyboard = InlineKeyboardMarkup(
+    inline_keyboard=currency_info_array
+)
+
+currency_info_menu = ReplyKeyboardMarkup(
+    keyboard=[
+        [
+            KeyboardButton(text="Change cryptocurrency"),
+            KeyboardButton(text="Back"),
+        ]
+    ],
+    resize_keyboard=True,
+    selective=True,
+    one_time_keyboard=True,
+    input_field_placeholder="Choose an option from menu..."
+)
+
+
 def currency_exchange_keyboard():
     keyboard = ReplyKeyboardBuilder()
     [keyboard.button(text=fiat) for fiat in currencies]
