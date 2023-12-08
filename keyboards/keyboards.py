@@ -25,9 +25,6 @@ currencies = [
     "XAU", "XAG", "XPT"
 ]
 
-
-
-
 currency_info_array = [
     [
         InlineKeyboardButton(text="Chart"),

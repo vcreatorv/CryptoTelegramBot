@@ -8,7 +8,7 @@ from configs.config import configuration
 from keyboards import keyboards
 from FSM.StateMachine import ExchangeCurrency, InfoCurrency
 from FSM.StateMachine import Menu
-from api.api import api_crypto_exchange
+from api.api import api_crypto_exchange, api_crypto_info
 
 logging.basicConfig(filename="../static/logger.txt", level=logging.INFO)
 dp = Dispatcher()
@@ -34,9 +34,15 @@ async def back(message: types.Message, state: FSMContext, change_flag: list[bool
 @dp.message(Menu.option, F.text.in_(Menu.menu))
 async def menu_option(message: types.Message, state: FSMContext):
     await state.update_data(option=message.text)
-    await message.answer("Choose a <i>base currency</i> from the following list :)",
-                         reply_markup=keyboards.currency_exchange_keyboard())
-    await state.set_state(ExchangeCurrency.base_currency)
+    # await message.answer("Choose a <i>base currency</i> from the following list :)",
+    #                      reply_markup=keyboards.currency_exchange_keyboard())
+    if message.text.lower() == "currency exchange prices":
+        await message.answer("Choose a <i>base currency</i> from the following list :)",
+                             reply_markup=keyboards.currency_exchange_keyboard())
+        await state.set_state(ExchangeCurrency.base_currency)
+    elif message.text.lower() == "cryptocurrency info":
+        await message.answer("Set the cryptocurrency")
+        await state.set_state(InfoCurrency.info_currency)
 
 
 @dp.message(ExchangeCurrency.base_currency, F.text.in_(keyboards.currencies))
@@ -109,6 +115,30 @@ async def next_step(message: types.Message, state: FSMContext, change_flag: list
         return await message.answer(text='Choose a new target currency',
                                     reply_markup=keyboards.currency_exchange_keyboard())
 
+
+@dp.message(InfoCurrency.info_currency)
+async def info_currency(message: types.Message, state: FSMContext):
+    await state.update_data(set_currency=message.text)
+    info = await state.get_data()
+    currency = info["set_currency"].upper()
+    response = api_crypto_info(currency)
+    print(response)
+    keyboards.currency_info_array[0][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Chart"
+    keyboards.currency_info_array[0][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#News"
+    keyboards.currency_info_array[1][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Markets"
+    keyboards.currency_info_array[1][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Analytics"
+    await message.reply(text=f"Name: {response['Name']}\n"
+                              f"Price: {response['Price']}\n"
+                              f"1hr Change: {response['1hr Change']}\n"
+                              f"24hr Change: {response['24hr Change']}\n"
+                              f"7d Change: {response['7d Change']}\n"
+                              f"Volume: {response['Volume']}\n"
+                              f"Market Cap: {response['Market Cap']}\n"
+                              f"Circulating Supply: {response['Circulating Supply']}\n"
+                              f"Total Supply: {response['Total Supply']}",
+                         reply_markup=keyboards.currency_info_keyboard)
+    await state.set_state(Menu.option)
+    # await message.answer(reply_markup=keyboards.currency_info_menu)
 
 @dp.message()
 async def wrong_input(message: types.Message):
