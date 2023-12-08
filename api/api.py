@@ -77,15 +77,15 @@ def api_crypto_info(crypto_symbol: str):
 
     info = {
         "Name": target["name"],
-        "Price": target["quote"]["USD"]["price"],
-        "1hr Change": f'{target["quote"]["USD"]["percent_change_1h"]}%',
-        "24hr Change": f'{target["quote"]["USD"]["percent_change_24h"]}%',
-        "7d Change": f'{target["quote"]["USD"]["percent_change_7d"]}%',
+        "Symbol": target["symbol"],
+        "Price": f'${round(target["quote"]["USD"]["price"], 5)} USD',
+        "1hr Change": f'{round(target["quote"]["USD"]["percent_change_1h"], 2)}%',
+        "24hr Change": f'{round(target["quote"]["USD"]["percent_change_24h"], 2)}%',
+        "7d Change": f'{round(target["quote"]["USD"]["percent_change_7d"], 2)}%',
         "Volume": f'${round(target["quote"]["USD"]["price"] * target["total_supply"], 2)}',
-        "Market Cap": f'${target["quote"]["USD"]["market_cap"]}',
-        "Circulating Supply": target["circulating_supply"],
-        "Total Supply": target["total_supply"],
+        "Market Cap": f'${round(target["quote"]["USD"]["market_cap"], 2)}',
+        "Circulating Supply": f'{round(target["circulating_supply"], 2)}',
+        "Total Supply": f'{round(target["total_supply"], 2)}',
     }
 
     return info
-

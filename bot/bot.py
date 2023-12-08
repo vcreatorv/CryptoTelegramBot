@@ -88,7 +88,7 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
             "convert": target_currency
         }
         response = api_crypto_exchange(parameters)
-        conversion = response["data"][0]["quote"][target_currency]["price"]
+        conversion = round(response["data"][0]["quote"][target_currency]["price"], 2)
         await message.answer(
             f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
             reply_markup=keyboards.currency_exchange_keyboard_expanded())
@@ -122,21 +122,22 @@ async def info_currency(message: types.Message, state: FSMContext):
     info = await state.get_data()
     currency = info["set_currency"].upper()
     response = api_crypto_info(currency)
-    print(response)
+
     keyboards.currency_info_array[0][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Chart"
     keyboards.currency_info_array[0][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#News"
     keyboards.currency_info_array[1][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Markets"
     keyboards.currency_info_array[1][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Analytics"
-    await message.reply(text=f"Name: {response['Name']}\n"
-                              f"Price: {response['Price']}\n"
-                              f"1hr Change: {response['1hr Change']}\n"
-                              f"24hr Change: {response['24hr Change']}\n"
-                              f"7d Change: {response['7d Change']}\n"
-                              f"Volume: {response['Volume']}\n"
-                              f"Market Cap: {response['Market Cap']}\n"
-                              f"Circulating Supply: {response['Circulating Supply']}\n"
-                              f"Total Supply: {response['Total Supply']}",
-                         reply_markup=keyboards.currency_info_keyboard)
+
+    await message.reply(text=f"<b>{response['Name']} ({response['Symbol'].upper()})</b>\n"
+                              f"<b>Price</b>: {response['Price']}\n"
+                              f"<b>1hr Change</b>: {response['1hr Change']}\n"
+                              f"<b>24hr Change</b>: {response['24hr Change']}\n"
+                              f"<b>7d Change</b>: {response['7d Change']}\n"
+                              f"<b>Volume</b>: {response['Volume']}\n"
+                              f"<b>Market Cap</b>: {response['Market Cap']}\n"
+                              f"<b>Circulating Supply</b>: {response['Circulating Supply']}\n"
+                              f"<b>Total Supply</b>: {response['Total Supply']}",
+                    reply_markup=keyboards.currency_info_keyboard)
     await state.set_state(Menu.option)
     # await message.answer(reply_markup=keyboards.currency_info_menu)
 
