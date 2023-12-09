@@ -9,6 +9,7 @@ from keyboards import keyboards
 from FSM.StateMachine import ExchangeCurrency, InfoCurrency
 from FSM.StateMachine import Menu
 from api.api import api_crypto_exchange, api_crypto_info
+from commands import set_commands
 
 logging.basicConfig(filename="../static/logger.txt", level=logging.INFO)
 dp = Dispatcher()
@@ -31,16 +32,18 @@ async def back(message: types.Message, state: FSMContext, change_flag: list[bool
     return await message.answer(text='back', reply_markup=keyboards.main_keyboard)
 
 
+# @dp.message(Menu.option, F.text.in_(Menu.menu))
 @dp.message(Menu.option, F.text.in_(Menu.menu))
 async def menu_option(message: types.Message, state: FSMContext):
     await state.update_data(option=message.text)
     # await message.answer("Choose a <i>base currency</i> from the following list :)",
     #                      reply_markup=keyboards.currency_exchange_keyboard())
-    if message.text.lower() == "currency exchange prices":
+    if message.text.lower() == "currency exchange prices" or message.text.lower() == "/exchange_prices":
         await message.answer("Choose a <i>base currency</i> from the following list :)",
                              reply_markup=keyboards.currency_exchange_keyboard())
         await state.set_state(ExchangeCurrency.base_currency)
-    elif message.text.lower() == "cryptocurrency info":
+
+    elif message.text.lower() == "cryptocurrency info" or message.text.lower() == "/cryptocurrency_info":
         await message.answer("Set the cryptocurrency")
         await state.set_state(InfoCurrency.info_currency)
 
@@ -80,8 +83,9 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
     if message.text.isdigit():
         base_currency = exchange['chosen_base_currency']
         target_currency = exchange['chosen_target_currency']
-        await message.answer(f'You are going to converse {amount_for_converse} units of {base_currency} into'
-                             f' {target_currency}')
+        # await message.answer(
+        #     f'You are going to converse <b>{amount_for_converse}</b> units of <b>{base_currency}</b> into'
+        #     f' {target_currency}')
         parameters = {
             "amount": int(amount_for_converse),
             "symbol": base_currency,
@@ -90,7 +94,8 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
         response = api_crypto_exchange(parameters)
         conversion = round(response["data"][0]["quote"][target_currency]["price"], 2)
         await message.answer(
-            f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
+            f'You are going to converse <b>{amount_for_converse}</b> units of <b>{base_currency}</b> into'
+            f' {target_currency}\n\n'f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
             reply_markup=keyboards.currency_exchange_keyboard_expanded())
         change_flag[0] = False
         return await state.set_state(ExchangeCurrency.next_step)
@@ -125,21 +130,25 @@ async def info_currency(message: types.Message, state: FSMContext):
 
     keyboards.currency_info_array[0][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Chart"
     keyboards.currency_info_array[0][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#News"
-    keyboards.currency_info_array[1][0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Markets"
-    keyboards.currency_info_array[1][1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Analytics"
+    keyboards.currency_info_array[1][
+        0].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Markets"
+    keyboards.currency_info_array[1][
+        1].url = f"https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Analytics"
 
     await message.reply(text=f"<b>{response['Name']} ({response['Symbol'].upper()})</b>\n"
-                              f"<b>Price</b>: {response['Price']}\n"
-                              f"<b>1hr Change</b>: {response['1hr Change']}\n"
-                              f"<b>24hr Change</b>: {response['24hr Change']}\n"
-                              f"<b>7d Change</b>: {response['7d Change']}\n"
-                              f"<b>Volume</b>: {response['Volume']}\n"
-                              f"<b>Market Cap</b>: {response['Market Cap']}\n"
-                              f"<b>Circulating Supply</b>: {response['Circulating Supply']}\n"
-                              f"<b>Total Supply</b>: {response['Total Supply']}",
-                    reply_markup=keyboards.currency_info_keyboard)
+                             f"<b>Price</b>: {response['Price']}\n"
+                             f"<b>1hr Change</b>: {response['1hr Change']}\n"
+                             f"<b>24hr Change</b>: {response['24hr Change']}\n"
+                             f"<b>7d Change</b>: {response['7d Change']}\n"
+                             f"<b>Volume</b>: {response['Volume']}\n"
+                             f"<b>Market Cap</b>: {response['Market Cap']}\n"
+                             f"<b>Circulating Supply</b>: {response['Circulating Supply']}\n"
+                             f"<b>Total Supply</b>: {response['Total Supply']}\n\n"
+                             f"🔗<a href='https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Chart'>View on CoinMarketCap</a>🔗",
+                        reply_markup=keyboards.currency_info_keyboard)
     await state.set_state(Menu.option)
     # await message.answer(reply_markup=keyboards.currency_info_menu)
+
 
 @dp.message()
 async def wrong_input(message: types.Message):
@@ -148,7 +157,8 @@ async def wrong_input(message: types.Message):
 
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot, change_flag=[False])
+    await dp.start_polling(bot, change_flag=[False], on_startup=set_commands)
+    # await dp.start_polling(bot, change_flag=[False])
 
 
 if __name__ == "__main__":

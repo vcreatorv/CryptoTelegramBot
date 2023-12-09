@@ -14,4 +14,4 @@ class InfoCurrency(StatesGroup):
 
 class Menu(StatesGroup):
     option: str = State()
-    menu = ["Currency exchange prices", "Cryptocurrency info"]
+    menu = ["Currency exchange prices", "Cryptocurrency info", "/exchange_prices", "/cryptocurrency_info"]
