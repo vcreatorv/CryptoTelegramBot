@@ -96,8 +96,8 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
         response = api_crypto_exchange(parameters)
         conversion = round(response["data"][0]["quote"][target_currency]["price"], 2)
         await message.answer(
-            f'You are going to converse <b>{amount_for_converse}</b> units of <b>{base_currency}</b> into'
-            f' {target_currency}\n\n'f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
+            f'You are going to converse <b>{float(amount_for_converse):,}</b> units of <b>{base_currency}</b> into'
+            f' {target_currency}\n\n'f"{float(amount_for_converse):,} <b>{base_currency}</b> equals {conversion:,} <b>{target_currency}</b>",
             reply_markup=keyboards.currency_exchange_keyboard_expanded())
         change_flag[0] = False
         return await state.set_state(ExchangeCurrency.next_step)
