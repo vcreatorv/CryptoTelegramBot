@@ -1,3 +1,5 @@
+import os
+
 from aiogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
@@ -19,7 +21,7 @@ main_keyboard = ReplyKeyboardMarkup(
     input_field_placeholder="Choose an option from menu..."
 )
 
-currencies = [
+popular_currencies = [
     "USD", "EUR", "RUB",
     "CNY", "JPY", "QAR",
     "XAU", "XAG", "XPT"
@@ -54,9 +56,22 @@ currency_info_menu = ReplyKeyboardMarkup(
 )
 
 
+def get_currencies():
+    array_of_currencies = []
+    os.chdir(r"C:\Users\valer\OneDrive\Рабочий стол\3 семестр\ПиКЯП\CryptoTelegramBot\keyboards")
+    with open("currencies.txt", mode='r') as file:
+        lines = file.readlines()
+        for line in lines:
+            currency = line.split(' ')[0]
+            array_of_currencies.append(currency)
+    return array_of_currencies
+
+
+
+
 def currency_exchange_keyboard():
     keyboard = ReplyKeyboardBuilder()
-    [keyboard.button(text=fiat) for fiat in currencies]
+    [keyboard.button(text=fiat) for fiat in popular_currencies]
     keyboard.button(text='Back')
     keyboard.adjust(*[3] * 3, 1)
     return keyboard.as_markup(resize_keyboard=True)
@@ -65,9 +80,13 @@ def currency_exchange_keyboard():
 def currency_exchange_keyboard_expanded():
     keyboard = ReplyKeyboardBuilder()
 
-    [keyboard.button(text=fiat) for fiat in currencies]
+    [keyboard.button(text=fiat) for fiat in popular_currencies]
     keyboard.button(text='Change base currency')
     keyboard.button(text='Change target currency')
     keyboard.button(text='Back')
     keyboard.adjust(*[3] * 4)
     return keyboard.as_markup(resize_keyboard=True)
+
+
+all_currencies = get_currencies()
+#print('MXN'.lower() in all_currencies)
