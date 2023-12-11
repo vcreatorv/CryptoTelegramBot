@@ -144,7 +144,7 @@ async def info_currency(message: types.Message, state: FSMContext):
                              f"<b>Market Cap</b>: {response['Market Cap']}\n"
                              f"<b>Circulating Supply</b>: {response['Circulating Supply']}\n"
                              f"<b>Total Supply</b>: {response['Total Supply']}\n\n"
-                             f"🔗<a href={keyboards.currency_info_array[0][0].url}>View on CoinMarketCap</a>🔗",
+                             f"🔗<a href='https://coinmarketcap.com/currencies/{response['Name'].lower()}/#Chart'>View on CoinMarketCap</a>🔗",
                         reply_markup=keyboards.currency_info_keyboard)
     await state.set_state(Menu.option)
     # await message.answer(reply_markup=keyboards.currency_info_menu)
