@@ -17,24 +17,27 @@ bot = Bot(token=configuration.BOT_TOKEN.get_secret_value(), parse_mode="html")
 
 @dp.message(Command("start"))
 async def cmd_start(message: types.Message, state: FSMContext):
-    await message.answer("Hello, Aiogram 3.x!", reply_markup=keyboards.main_keyboard)
-    await message.answer('Choose an option')
+    await message.answer(f"Hello, {message.from_user.username}! Welcome to NIVACryptoBot 📈\n\n"
+                         f"Choose an option on your keyboard 📲",
+                         reply_markup=keyboards.main_keyboard)
     await state.set_state(Menu.option)
 
 
-@dp.message(Menu.option, F.text.in_(Menu.menu))
+@dp.message(F.text.lower().in_(['back']))
+async def back(message: types.Message, state: FSMContext, change_flag: list[bool]):
+    await state.clear()
+    if change_flag[0]:
+        change_flag[0] = False
+    await state.set_state(Menu.option)
+    return await message.answer(text='Back to Menu', reply_markup=keyboards.main_keyboard)
+
+
+@dp.message(Menu.option, F.text.in_("Currency exchange prices"))
 async def menu_option(message: types.Message, state: FSMContext):
     await state.update_data(option=message.text)
-    await message.answer("Choose a <i>base currency</i> from the following list :)",
+    await message.answer("Choose a <i>base currency</i> on your keyboard 💱",
                          reply_markup=keyboards.currency_exchange_keyboard())
     await state.set_state(ExchangeCurrency.base_currency)
-
-
-# @dp.message(F.text.lower() == "currency exchange prices")
-# async def exchange_base_currency(message: types.Message, state: FSMContext):
-#     await message.answer("Choose a <i>base currency</i> from the following list :)",
-#                          reply_markup=keyboards.currency_exchange_keyboard())
-#     # await state.set_state(ExchangeCurrency.base_currency)
 
 
 @dp.message(ExchangeCurrency.base_currency, F.text.in_(keyboards.currencies))
@@ -43,11 +46,11 @@ async def exchange_target_currency(message: types.Message, state: FSMContext, ch
     exchange = await state.get_data()
     if not change_flag[0]:
         await message.reply(f"You've chosen <b>{exchange['chosen_base_currency']}</b> as base currency. "
-                            f"Now choose a <i>target currency</i> from the list below :)",
+                            f"Now choose a <i>target currency</i> on your keyboard 💱",
                             reply_markup=keyboards.currency_exchange_keyboard())
         await state.set_state(ExchangeCurrency.target_currency)
     else:
-        await message.reply('Set currency')
+        await message.reply("Please, set the currency amount for converting ⬇️")
         await state.set_state(ExchangeCurrency.amount)
 
 
@@ -60,17 +63,8 @@ async def exchange_procedure(message: types.Message, state: FSMContext):
     await message.reply(
         f"You've chosen <b>{base_currency}</b> as base currency"
         f" and <b>{target_currency}</b> as target currency.")
-    await message.answer(text='Please set the currency amount for converting')
+    await message.answer(text='Please, set the currency amount for converting ⬇️')
     await state.set_state(ExchangeCurrency.amount)
-
-    # parameters = {
-    #     "amount": 100,
-    #     "symbol": base_currency,
-    #     "convert": target_currency
-    # }
-    # response = api_crypto(parameters)
-    # conversion = response["data"][0]["quote"][target_currency]["price"]
-    # await message.answer(f"100 <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>")
 
 
 @dp.message(ExchangeCurrency.amount)
@@ -81,68 +75,45 @@ async def currency_amount(message: types.Message, state: FSMContext, change_flag
     if message.text.isdigit():
         base_currency = exchange['chosen_base_currency']
         target_currency = exchange['chosen_target_currency']
-        await message.answer(f'You are going to converse {amount_for_converse} units of {base_currency} into'
-                             f' {target_currency}')
+
         parameters = {
             "amount": int(amount_for_converse),
             "symbol": base_currency,
             "convert": target_currency
         }
+
         response = api_crypto(parameters)
         conversion = response["data"][0]["quote"][target_currency]["price"]
         await message.answer(
-            f"{amount_for_converse} <b>{base_currency}</b> equals {conversion} <b>{target_currency}</b>",
+            f'You are going to converse <b>{float(amount_for_converse):,}</b> units of <b>{base_currency}</b> into'
+            f' <b>{target_currency}</b>\n\n'f"{float(amount_for_converse):,} <b>{base_currency}</b> equals {conversion:,.2f} <b>{target_currency}</b>",
             reply_markup=keyboards.currency_exchange_keyboard_expanded())
         change_flag[0] = False
         return await state.set_state(ExchangeCurrency.next_step)
     else:
         change_flag[0] = False
-        await message.answer('Wrong data. Please try again')
+        await message.answer('Wrong data. Please, try again')
         return await state.set_state(ExchangeCurrency.amount)
 
 
 @dp.message(ExchangeCurrency.next_step)
 async def next_step(message: types.Message, state: FSMContext, change_flag: list[bool]):
     await state.update_data(step=message.text)
-    if message.text.lower() == 'back':
-        await state.clear()
-        await state.set_state(Menu.option)
-        return await message.answer(text='back', reply_markup=keyboards.main_keyboard)
     if message.text.lower() == "change base currency":
         change_flag[0] = True
         await state.set_state(ExchangeCurrency.base_currency)
-        return await message.answer(text='Choose a new base currency',
+        return await message.answer(text='Choose a new base currency on your keyboard',
                                     reply_markup=keyboards.currency_exchange_keyboard())
     if message.text.lower() == 'change target currency':
         change_flag[0] = True
         await state.set_state(ExchangeCurrency.target_currency)
-        return await message.answer(text='Choose a new target currency',
+        return await message.answer(text='Choose a new target currency on your keyboard',
                                     reply_markup=keyboards.currency_exchange_keyboard())
-
-
-@dp.message(F.text.lower().in_(['back']))
-async def back(message: types.Message, state: FSMContext, change_flag: list[bool]):
-    await state.clear()
-    if change_flag[0]:
-        change_flag[0] = False
-    await state.set_state(Menu.option)
-    return await message.answer(text='back', reply_markup=keyboards.main_keyboard)
-
-
-# @dp.message(F.text.lower().in_(['change base currency']))
-# async def change_base_curr(message: types.Message, state: FSMContext, change_flag: list[bool, str]):
-#     print(1)
-#     change_flag[0] = True
-#     # exchange = await state.get_data()
-#     # change_flag[1] = exchange['chosen_base_currency']
-#     # print(change_flag[1])
-#     await state.set_state(ExchangeCurrency.base_currency)
-#     return await message.answer(text='Choose a new base currency', reply_markup=keyboards.currency_exchange_keyboard())
 
 
 @dp.message()
 async def wrong_input(message: types.Message):
-    await message.answer('Wrong data')
+    await message.answer('Wrong data. Please, try again')
 
 
 async def main():
